@@ -17,7 +17,7 @@ for y in range(0, height, filter_size):
   for x in range(0, width, filter_size):
     # ぼかし加工同様に画像の一部分を切り出す
     partial_img = img_pixels[y:y + filter_size, x:x + filter_size]
-    # 色の配列になるように変換する
+    # 色の配列になるように変換するよ
     color_array = partial_img.reshape(partial_img.shape[0] * partial_img.shape[1], 3)
     # 各ピクセルごとのr + g + bが最大値を取る物の番号を取得する
     # ようするに切り出した画像の中で一番濃い色の番号
